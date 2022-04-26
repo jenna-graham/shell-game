@@ -6,7 +6,7 @@
 }
 
 .shell {
-    width: 400px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@
 }
 
 .shell.reveal img {
-    transform: translateY(-60px);
+    transform: translateY(-75px);
 }
 .ball {
     z-index: 10;
@@ -23,42 +23,34 @@
     height: 40px;
     width: 40px;
     top: 120px;
-    background-color: #e8e8e4ff;
+    background-color: #403d39ff;
     border-radius: 50%;
     box-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
 }
 #shell-one-img {
-    width: 60%;
+    width: 70%;
     transition: transform 0.5s ease-in-out;
     z-index: 20;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     
 }
 #shell-two-img {
-    width: 60%;
+    width: 70%;
     transition: transform 0.5s ease-in-out;
     z-index: 20;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 } 
 #shell-three-img {
-    width: 60%;
+    width: 70%;
     transition: transform 0.5s ease-in-out;
     z-index: 20;
-    margin-bottom: 60px;
-    
+    margin-bottom: 50px;
 }
+    
 .results {
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 40px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3em;
 }
-.ball {
-    z-index: 10;
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    top: 120px;
-    background-color: green;
-    border-radius: 50%;
-    box-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
-}
+

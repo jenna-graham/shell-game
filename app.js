@@ -1,8 +1,7 @@
 // import functions and grab DOM elements
 const button1 = document.getElementById('shell-one-button');
-
-// const button2 = document.getElementById('shell-two-button');
-// const button3 = document.getElementById('shell-three-button');
+const button2 = document.getElementById('shell-two-button');
+const button3 = document.getElementById('shell-three-button');
 
 const shell1 = document.getElementById('shell-one');
 const shell2 = document.getElementById('shell-two');
@@ -26,15 +25,15 @@ button1.addEventListener('click', () => {
     shell2.classList.remove('reveal');
     shell3.classList.remove('reveal');
   
-    console.log('clicking button 1');
+    console.log('clicked button 1');
   // decide which item the ball is under
-    const randomShell = Math.ceil(Math.random() * 3);
+    const winningShell = Math.ceil(Math.random() * 3);
 
-    console.log('the random shell is', randomShell);
-    if (randomShell === 1) {
+    console.log('the winning shell is', winningShell);
+    if (winningShell === 1) {
         shell1.classList.add('reveal');
         wins++;
-    } else if (randomShell === 2) {
+    } else if (winningShell === 2) {
         shell2.classList.add('reveal');
         losses++;
     } else {
@@ -44,7 +43,53 @@ button1.addEventListener('click', () => {
     winSpan.textContent = wins;
     lossSpan.textContent = losses;
     totalSpan.textContent = wins + losses;
+});    
+button2.addEventListener('click', () => {
+    shell1.classList.remove('reveal');
+    shell2.classList.remove('reveal');
+    shell3.classList.remove('reveal');
+
+    console.log('clicked button 2');
+    const winningShell = Math.ceil(Math.random() * 3);
+
+    console.log('the winning shell is', winningShell);
+    if (winningShell === 2) {
+        shell2.classList.add('reveal');
+        wins++;
+    } else if (winningShell === 1) {
+        shell1.classList.add('reveal');
+        losses++;
+    } else {
+        shell3.classList.add('reveal');
+        losses++;
+    }
+    winSpan.textContent = wins;
+    lossSpan.textContent = losses;
+    totalSpan.textContent = wins + losses;
 }); 
-  
+
+button3.addEventListener('click', () => {
+    shell1.classList.remove('reveal');
+    shell2.classList.remove('reveal');
+    shell3.classList.remove('reveal');
+
+    console.log('clicked button 3');
+    const winningShell = Math.ceil(Math.random() * 3);
+
+    console.log('the winning shell is', winningShell);
+    if (winningShell === 3) {
+        shell3.classList.add('reveal');
+        wins++;
+    } else if (winningShell === 1) {
+        shell1.classList.add('reveal');
+        losses++;
+    } else {
+        shell2.classList.add('reveal');
+        losses++;
+    }
+    winSpan.textContent = wins;
+    lossSpan.textContent = losses;
+    totalSpan.textContent = wins + losses;
+}); 
 
 
