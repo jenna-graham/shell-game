@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
 
 body {
     /* feel free to update these css variables for a quick theme */
     
+
     --color1: white;
     --color2: white;
     --color3: white;
     --color4: white;
-    --color5: white;
+    --color5: #e8e8e4ff;
     
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
         
@@ -27,8 +29,8 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    font-family: 'Playfair Display SC', serif;
+    background-color: #ece4dbff;
 }
 
 main {
@@ -40,8 +42,10 @@ main {
 }
 
 section {
-    background-color: var(--color5);
-    max-width: 80%;
+    background-image: url(https://cdn.pixabay.com/photo/2020/04/14/15/35/beach-5043177_960_720.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,12 +54,15 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    font-weight: bold;
+    
+    
+    
 }
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
@@ -63,8 +70,17 @@ header {
 
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 3rem;
     font-weight: bold;
+    margin-top: 5px;
+    background-color: var(--color3);
+    font-family: 'Playfair Display SC', serif;
+    border: solid 1px; 
+    box-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
+    
+    
+    
+    
 }
 
 .gutter-right {
