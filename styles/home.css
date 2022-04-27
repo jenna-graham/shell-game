@@ -17,15 +17,15 @@
 .shell.reveal img {
     transform: translateY(-75px);
 }
-.ball {
+.pearl {
     z-index: 10;
     position: absolute;
     height: 40px;
     width: 40px;
     top: 120px;
-    background-color: #403d39ff;
+    background-color: #97978Bff;
     border-radius: 50%;
-    box-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px -2px 5px rgba(0, 0, 0, 0.9);
 }
 #shell-one-img {
     width: 70%;
@@ -48,9 +48,9 @@
 }
     
 .results {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3em;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 1.8em;
 }
 

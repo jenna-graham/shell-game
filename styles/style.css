@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
 
 body {
     /* feel free to update these css variables for a quick theme */
     
+
     --color1: white;
     --color2: white;
     --color3: white;
@@ -27,7 +29,7 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Playfair Display SC', serif;
     background-color: #ece4dbff;
 }
 
@@ -52,7 +54,9 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px #403d39ff;
+    font-weight: bold;
+    
+    
     
 }
 
@@ -66,8 +70,15 @@ header {
 
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 3rem;
     font-weight: bold;
+    margin-top: 5px;
+    background-color: var(--color3);
+    font-family: 'Playfair Display SC', serif;
+    border: solid 1px; 
+    box-shadow: 5px -2px 5px rgba(0, 0, 0, 0.6);
+    
+    
     
     
 }
